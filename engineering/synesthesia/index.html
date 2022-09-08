@@ -1,0 +1,53 @@
+<html>
+
+    <head>
+    
+        <title>techne.</title>
+        <link href="engineeringgeneral.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&subset=latin-ext" rel="stylesheet">
+        <link rel="icon" href="/favicon32.png" sizes="32x32" type="image/png">
+        
+    </head>
+    
+    <body>
+    
+        <div class="menu-container">
+        <div class="menu">
+        
+            <ul>
+                <li><a href="/" class="title">techne.</a></li>
+                <li><a href="/about">about</a></li>
+                <li><a href="/photography">photography</a></li>
+                <li><a href="/engineering">engineering</a></li>
+                <li><a href="/design">design</a></li>
+                <li><a href="/music">music</a></li>
+            </ul>
+            
+        </div>
+        </div>
+        
+        <div class="main-container">
+        <div class="main">
+            
+            <h1>synesthesia</h1>
+            
+            <p>This project was a collaboration with a student majoring in New Media at SUNY Purchase. Their final project in an experimental sound design class involved a musical performance played over a recording of a poem. To add a visual element to the experience, I designed an Arduino-based device which displayed different colors of light on an LED strip based on the range of notes played on the keyboard used for the performance.</p>
+            
+            <div class="photo">
+                <img src="photos/synestesia.jpg">
+            </div>
+            
+            <p>The most significant issue that I ran into during construction was that both reading the MIDI data from the keyboard and writing values to the LED were processor intensive tasks, and could not be handled by a single microcontroller. Instead I divided the tasks among two boards, with one reading an optoisolated MIDI signal through a breakout board and sending corresponding analog signals to a second board, which lit specific ranges of the LED strip according to the data from the first board. A third board was added to control a strobe light with a foot pedal, but was not implemented in the performance below. All of the control electronics were housed in a shoebox, as can be seen above.</p>
+            
+            <video controls width="800" class="video">
+                <source src="photos/synesthesia.mp4" type="video/mp4">
+            </video>
+            
+            <p></p>
+            
+        </div>
+        </div>
+        
+    </body>
+
+</html>

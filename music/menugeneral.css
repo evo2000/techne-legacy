@@ -1,0 +1,100 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu-container {
+    width: 25vw;
+    height: 100vh;
+    top: 0px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    position: fixed;
+    overflow: auto;
+    padding: 0px;
+    background-color: white;
+}
+
+.menu {
+    width: 98px;
+    margin: 0 auto;
+    padding-top: 42vh;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin-left: -15px;
+}
+
+.menu ul a:link{
+    text-decoration: none;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    transition: letter-spacing 0.25s;
+}
+
+.menu ul a:hover {
+    letter-spacing: 1px;
+}
+
+.menu ul a.title:link {
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+    background: black;
+    padding-top: 65px;
+    padding-right: 35px;
+}
+
+.menu ul a.title:visited {
+    color: white;
+}
+
+.menu ul a.title:hover {
+    letter-spacing: 0px;
+}
+
+.menu li {
+    margin: 8px 0;
+}
+
+.menu a {
+    color: black;
+}
+
+.main-container {
+    width: 75vw;
+    height: 100vh;
+    margin-left: 25vw;
+}
+
+.main {
+    display: inline-block;
+    font-family: 'Libre Baskerville', serif;
+    padding-left: 20vw;
+    padding-right: 10vw;
+    padding-top: 30vh;
+    padding-bottom: 15vh;
+}
+
+.main h1{
+    font-size: 70px;
+}
+
+.main ul{
+    list-style-type: none;
+}
+
+.main a{
+    text-decoration: none;
+    color: lightgray;
+    font-size: 70px;
+}
+
+.main ul a:link{
+    transition: letter-spacing 0.25s;
+}
+
+.main ul a:hover{
+    letter-spacing: 5px;
+}

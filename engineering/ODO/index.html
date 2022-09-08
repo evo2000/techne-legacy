@@ -1,0 +1,61 @@
+<html>
+
+    <head>
+    
+        <title>techne.</title>
+        <link href="engineeringgeneral.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&subset=latin-ext" rel="stylesheet">
+        <link rel="icon" href="/favicon32.png" sizes="32x32" type="image/png">
+        
+    </head>
+    
+    <body>
+    
+        <div class="menu-container">
+        <div class="menu">
+        
+            <ul>
+                <li><a href="/" class="title">techne.</a></li>
+                <li><a href="/about">about</a></li>
+                <li><a href="/photography">photography</a></li>
+                <li><a href="/engineering">engineering</a></li>
+                <li><a href="/design">design</a></li>
+                <li><a href="/music">music</a></li>
+            </ul>
+            
+        </div>
+        </div>
+        
+        <div class="main-container">
+        <div class="main">
+            
+            <h1>ODO</h1>
+            
+            <p>The ODO, or Optical Data Overlay, is a project I created for a science fair in high school. I have always been interested in optics, and was inpired to bring this interest togther with  my knowledge of electronics. Virtual and augmented reality devices were definitely a large source of inspiration for this project, and their exclusivity only made the idea of a homemade platform more exciting. Although the ODO is not capable of creating an experience as immersive as the industry seems to strive for, its purpose is simply to create a platform for accessible experimentation with the utility of augmented reality.</p>
+            
+            <div class="photo">
+                <img src="photos/ODO1.jpg">
+            </div>
+            
+            <p>Inside the cardboard tube, a half-silvered mirror is situated at a 45 degree angle from both the display and the line of sight through the device. This component is the heart of the optical system, and creates a resulting view which is a mixture of ambient light passing through the tube, and reflected light from the display.</p>
+            
+            <div class="photo">
+                <img src="photos/outside.jpg">
+            </div>
+            
+            <p>In this setup, the ODO is outfitted with a magneto sensor, for the purpose of displaying compass heading in the viewport.</p>
+            
+            <div class="photo">
+                <img src="photos/ODO2.jpg">
+            </div>
+            
+            <p>In this shot the driver board for the OLED display, pointing into the assembly, can be seen on the bottom of the device. Both the magneto sensor and display are connected to an Arduino UNO, which handles the data input, output, and heading computations.</p>
+            
+            <p>Although physically this project is not very complex, it presented its most significant challenge in its code. Because the image from the display is being reflected onto the view of the user, it appeared 'flipped', just as images do in a mirror. To remedy this, I edited the main file of the library which I was using to write to the display, essentially reversing the X and Y axes to create a 'flipped' image straight out of the display. When this image is reflected inside the tube, it appears correctly, or 'unflipped', to the user.</p>
+            
+        </div>
+        </div>
+        
+    </body>
+
+</html>

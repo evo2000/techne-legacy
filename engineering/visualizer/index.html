@@ -1,0 +1,49 @@
+<html>
+
+    <head>
+    
+        <title>techne.</title>
+        <link href="engineeringgeneral.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&subset=latin-ext" rel="stylesheet">
+        <link rel="icon" href="/favicon32.png" sizes="32x32" type="image/png">
+        
+    </head>
+    
+    <body>
+    
+        <div class="menu-container">
+        <div class="menu">
+        
+            <ul>
+                <li><a href="/" class="title">techne.</a></li>
+                <li><a href="/about">about</a></li>
+                <li><a href="/photography">photography</a></li>
+                <li><a href="/engineering">engineering</a></li>
+                <li><a href="/design">design</a></li>
+                <li><a href="/music">music</a></li>
+            </ul>
+            
+        </div>
+        </div>
+        
+        <div class="main-container">
+        <div class="main">
+            
+            <h1>visualizer</h1>
+            
+            <p>The purpose of this work in progress device is to create a graphical representation of audio, in this case a cube changing direction when a low frequency is detected, indicating a beat. Incoming audio is passed through a low pass filter, and sent to an Arduino which produces the composite video signal. The analog signal passed through the filter triggers the Arduino to randomly change the direction of rotation of the cube displayed on the screen of this salvaged karaoke machine.</p>
+            
+            <div class="photo">
+                <img src="photos/gif.gif">
+            </div>
+            
+            <p>In its current state, this device is hard to use easily. Part of this issue can be solved by lowering the sensitivity of the cutoff frequency in the low pass filter, however a big part of this is due to the fact that not many songs have beats that are isolated low frequencies. Many songs either have kick drums that are not significantly lower frequencies than other intruments, or also have instruments such as bass playing in the low frequency range of the kick. I have done research into 'beat-sensing' techniques, and discovered algorithms which take into account the regularity of low frequencies, and even compare them to common tempos.</p>
+            
+            <p>I am interested in many different types of audio visualizers, and while I work on this project I am developing other ideas including devices which react to a fuller frequency range, as opposed to solely bass and beat sensing.</p>
+            
+        </div>
+        </div>
+        
+    </body>
+
+</html>
